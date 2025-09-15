@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>𝐄𝐈𝐓𝐇𝐈𝐂𝐀𝐋 𝐌𝐀𝐑𝐊𝐄𝐓</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .fade { transition: opacity 1s ease-in-out; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <!-- 🔹 Announcement Bar -->
+  <div class="bg-indigo-700 text-white py-2 text-center text-sm font-semibold">
+    <p id="announcement" class="fade">🔥𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐄𝐈𝐓𝐇𝐈𝐂𝐀𝐋 𝐌𝐀𝐑𝐊𝐄𝐓 — Your Hub for Ethical Hacking, eBooks & Premium Tools!🔥</p>
+  </div>
+
+  <!-- 🔹 Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 md:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-700 tracking-wide">𝐄𝐈𝐓𝐇𝐈𝐂𝐀𝐋 𝐌𝐀𝐑𝐊𝐄𝐓</h1>
+      <nav class="mt-3 flex flex-wrap justify-center gap-6 md:gap-10">
+        <a href="#products" class="text-lg font-medium text-gray-700 hover:text-indigo-600">Products</a>
+        <a href="#about" class="text-lg font-medium text-gray-700 hover:text-indigo-600">About</a>
+        <a href="#contact" class="text-lg font-medium text-gray-700 hover:text-indigo-600">Contact</a>
+        <a href="#comments" class="text-lg font-medium text-gray-700 hover:text-indigo-600">Comments</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🔹 Hero Section -->
+  <section class="bg-cover bg-center min-h-[70vh] md:h-[80vh] flex items-center justify-center px-4" style="background-image: url('https://i.ibb.co/2dQZwNf/traditional-suit.jpg');">
+    <div class="bg-black bg-opacity-60 p-8 sm:p-12 rounded-2xl text-center">
+      <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-6">𝐄𝐈𝐓𝐇𝐈𝐂𝐀𝐋 𝐌𝐀𝐑𝐊𝐄𝐓</h2>
+      <p class="text-lg md:text-xl text-gray-200 mb-8">Your Trusted Hub for Ethical Hacking Books & Courses — Learn, Hack Ethically, Succeed.</p>
+      <a href="#products" class="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-4 rounded-lg font-semibold shadow-lg">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- 🔹 Product Section -->
+  <section id="products" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4">
+      <h3 class="text-3xl font-bold mb-12 text-center text-indigo-700">Our Latest Collection</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-10">
+
+        <!-- Product 1 -->
+        <div class="bg-white shadow-xl rounded-2xl p-6">
+          <img id="product1-img" src="IMG20250830020625.jpg" class="rounded-xl mb-4 w-full h-64 object-cover">
+          <h4 class="font-bold text-lg">Embroidered Maroon Peach Dress</h4>
+          <p class="text-gray-800">PKR 4000</p>
+          <p class="text-sm text-gray-600 mt-2">Elegant embroidered peach dress with maroon hues, acrylic wool shawl, and plain trouser.</p>
+          <div class="mt-4 flex gap-3">
+            <button onclick="buyNow('Embroidered Maroon Peach Dress', 4000)" class="flex-1 bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg">Buy Now</button>
+            <button onclick="addToCart('Embroidered Maroon Peach Dress', 4000)" class="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white py-2 rounded-lg">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="bg-white shadow-xl rounded-2xl p-6">
+          <img id="product2-img" src="product2-img1.jpg" class="rounded-xl mb-4 w-full h-64 object-cover">
+          <h4 class="font-bold text-lg">Silk Party Wear</h4>
+          <p class="text-gray-800">PKR 7200</p>
+          <p class="text-sm text-gray-600 mt-2">Luxurious silk suit ideal for weddings and parties.</p>
+          <div class="mt-4 flex gap-3">
+            <button onclick="buyNow('Silk Party Wear', 7200)" class="flex-1 bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg">Buy Now</button>
+            <button onclick="addToCart('Silk Party Wear', 7200)" class="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white py-2 rounded-lg">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="bg-white shadow-xl rounded-2xl p-6">
+          <img id="product3-img" src="product3-img1.jpg" class="rounded-xl mb-4 w-full h-64 object-cover">
+          <h4 class="font-bold text-lg">CapCut Pro Unlocked</h4>
+          <p class="text-gray-800">PKR 800</p>
+          <p class="text-sm text-gray-600 mt-2">CapCut Pro Version Unlocked ADs Free Ready For Your Use Best Deal For Youtuber,Tiktokers & Other Social Media Users!</p>
+          <div class="mt-4 flex gap-3">
+            <button onclick="buyNow('CapCut Pro Version',800)" class="flex-1 bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg">Buy Now</button>
+            <button onclick="addToCart('CapCut Pro Version',800)" class="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white py-2 rounded-lg">Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="bg-white shadow-xl rounded-2xl p-6">
+          <img id="product4-img" src="product4-img1.jpg" class="rounded-xl mb-4 w-full h-64 object-cover">
+          <h4 class="font-bold text-lg">YOUTUBE PREMIUM VERSION UNLOCKED ADS FREE</h4>
+          <p class="text-gray-800">PKR 500</p>
+          <p class="text-sm text-gray-600 mt-2">Premium Version of <strong>YT ADs free</strong></p>
+          <div class="mt-4 flex gap-3">
+            <button onclick="buyNow('YOUTUBE PREMIUM UNLOCED',500)" class="flex-1 bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg">Buy Now</button>
+            <button onclick="addToCart('YOUTUBE PREMIUM UNLOCKED',500)" class="flex-1 bg-yellow-500 hover:bg-yellow-600 text-white py-2 rounded-lg">Add to Cart</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-6 text-indigo-700">About <strong>EITHICAL MARKET</strong></h3>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        At Ethical Market, we believe in empowering tech learners and digital hustlers through ethical resources. Whether you're looking for ethical hacking courses, AI tools, premium apps, or exclusive eBooks — everything is delivered with integrity and accessibility. </p>
+    </div>
+  </section>
+
+  <!-- 🔹 Contact Section -->
+  <section id="contact" class="py-20 bg-gray-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-8 text-indigo-700">Contact Us</h3>
+      <p class="text-gray-700">Email: <a href="mailto:mianabdullahsuleman17@gmail.com" class="font-semibold text-indigo-600">mianabdullahsuleman17@gmail.com</a></p>
+      <p class="text-gray-700">WhatsApp: <span class="font-semibold">03463084191</span></p>
+    </div>
+  </section>
+
+  <!-- 🔹 Comments Section -->
+  <section id="comments" class="py-16 bg-gray-100">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <h3 class="text-2xl font-bold mb-6 text-indigo-700">Customer Comments</h3>
+      <form id="commentForm" class="space-y-3">
+        <input id="commentName" type="text" placeholder="Your Name" required class="w-full border p-2 rounded-lg">
+        <textarea id="commentText" placeholder="Write your comment..." required class="w-full border p-2 rounded-lg"></textarea>
+        <button type="submit" class="w-full bg-yellow-500 text-white py-2 rounded-lg hover:bg-yellow-600">Post Comment</button>
+      </form>
+      <div id="commentList" class="mt-8 space-y-4 text-left"></div>
+    </div>
+  </section>
+
+  <!-- 🔹 Footer -->
+  <footer class="bg-indigo-700 text-white py-6 text-center">
+    <p>All Rights Reserved © 𝐄𝐈𝐓𝐇𝐈𝐂𝐀𝐋 𝐌𝐀𝐑𝐊𝐄𝐓 (ABDULLAH SULEMAN) 2025</p>
+  </footer>
+
+  <!-- 🔹 Scripts -->
+  <script>
+    // 🔹 Announcement Rotation
+    const announcements = [
+      "🚀 Grand Opening Alert!*  
+Welcome to *𝐄𝐈𝐓𝐇𝐈𝐂𝐀𝐋 𝐌𝐀𝐑𝐊𝐄𝐓* – your one-stop store for premium ethical hacking courses, eBooks & paid tools — all in one ethical platform! 💻✨",
+      "🔐 Unlock Skills – Not Just Software!*  
+Start your ethical hacking journey today with verified content, safe downloads, and genuine resources! 🌐💡  
+*#LearnEthically #EthicalMarket*",
+      "🧠 Knowledge is Power — We Make It Accessible!*  
+Why pay more? Get AI tools, hacking courses, and premium app versions at student-friendly rates! 📚💸  
+*Limited-time deals available now!*",
+      "🎯 Special Launch Offer!*  
+First 50 customers get *bonus eBooks & discount codes* with every course or tool purchase!  
+Join the *𝐄𝐈𝐓𝐇𝐈𝐂𝐀𝐋 𝐌𝐀𝐑𝐊𝐄𝐓* revolution today! 🔥"
+    ];
+    let currentAnnouncement = 0;
+    setInterval(() => {
+      const ann = document.getElementById("announcement");
+      ann.classList.add("opacity-0");
+      setTimeout(() => {
+        currentAnnouncement = (currentAnnouncement + 1) % announcements.length;
+        ann.textContent = announcements[currentAnnouncement];
+        ann.classList.remove("opacity-0");
+      }, 1000);
+    }, 5000);
+
+    // 🔹 Buy Now via WhatsApp
+    function buyNow(productName, price) {
+      let message = `Hello, I want to access:\n\nProduct: ${productName}\nPrice: PKR ${price}`;
+      let url = `https://wa.me/923463084191?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+    }
+
+    // 🔹 Cart (saves items to localStorage)
+    function addToCart(productName, price) {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart.push({ productName, price });
+      localStorage.setItem("cart", JSON.stringify(cart));
+      alert(productName + " added to cart!");
+    }
+
+    // 🔹 Public Comments System
+    document.addEventListener("DOMContentLoaded", () => {
+      const savedComments = JSON.parse(localStorage.getItem("comments")) || [];
+      savedComments.forEach(c => addCommentToDOM(c.name, c.text));
+    });
+
+    document.getElementById("commentForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("commentName").value;
+      const text = document.getElementById("commentText").value;
+      addCommentToDOM(name, text);
+
+      let savedComments = JSON.parse(localStorage.getItem("comments")) || [];
+      savedComments.push({ name, text });
+      localStorage.setItem("comments", JSON.stringify(savedComments));
+
+      this.reset();
+    });
+
+    function addCommentToDOM(name, text) {
+      const commentList = document.getElementById("commentList");
+      const div = document.createElement("div");
+      div.className = "bg-white p-4 rounded-lg shadow";
+      div.innerHTML = `<p class="font-semibold text-indigo-700">${name}</p><p class="text-gray-700">${text}</p>`;
+      commentList.prepend(div);
+    }
+  </script>
+</body>
+</html>
